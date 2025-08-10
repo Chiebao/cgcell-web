@@ -51,7 +51,7 @@ Totalmente adaptado para dispositivos móveis (smartphones e tablets), com aten�
 # Acesse
 
 Em breve publicado em:  
-[https://www.cgcell.com.br](https://www.cgcell.com.br) *(substitua pela URL real quando disponível)*
+[https://www.cgcell.com.br](https://www.cgcell.com.br)
 
 ---
 

@@ -12,6 +12,7 @@
   --font-family-base: 'Poppins', sans-serif; /* Fonte principal */
 }
 
+/*geral*/
 * {
   margin: 0;
   padding: 0;
@@ -30,11 +31,11 @@ header {
 
 /* 🔹 NAV com vídeo de fundo */
 .nav-container {
-  height: 75px; /* define a altura da barra de navegação */
+  height: 75px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black; /* vídeo está no fundo */
+  background-color: black; 
   padding: 0 20px;
   position:center;
   z-index: 2;
@@ -84,8 +85,8 @@ header {
   font-weight: bold;
   margin: 0 auto;
   display: flex;
-  justify-content: center; /* alinha conteúdo interno horizontalmente */
-  align-items: center;     /* alinha conteúdo interno verticalmente */
+  justify-content: center; 
+  align-items: center;  
   overflow: visible; 
   font-size: 30px;
   margin-top: 2vh;
@@ -110,7 +111,7 @@ header {
   justify-content: center;
   color: white;
   background-color: #004aad;
-  background-image: url("../assets/banner\ capa\ iphone.png"); /* substitua pela imagem real */
+  background-image: url("../assets/banner\ capa\ iphone.png"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,9 +153,9 @@ header {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 150px;  /* altura do sombreado, ajuste como preferir */
+  height: 150px;  
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
-  pointer-events: none; /* permite que cliques passem pelo sombreado */
+  pointer-events: none;
 }
 
 /* 🔹 Links do menu */
@@ -271,7 +272,7 @@ header {
 @media (max-width: 768px) {
   .depoimentos-container {
     display: flex;
-    flex-direction: column;  /* empilha depoimentos e vídeo */
+    flex-direction: column; 
     align-items: center;
   }
 }
@@ -287,10 +288,10 @@ header {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* quantas colunas couberem */
-  gap: 2rem;                        /* espaçamento entre os cards */
-  padding: 0 20px;                  /* espaço nas laterais da tela */
-  justify-items: center;            /* centraliza os cards em cada coluna */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 2rem;                       
+  padding: 0 20px;                 
+  justify-items: center;           
 }
 
 .product-card {
@@ -303,9 +304,9 @@ header {
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
   cursor: pointer;
   width: 100%;
-  max-width: 550px;                 /* limita largura máxima do card */
-  margin: 0 auto;                   /* centraliza o card */
-  height: auto;                     /* altura dinâmica conforme conteúdo */
+  max-width: 550px;              
+  margin: 0 auto;               
+  height: auto;              
 }
 
 .product-card:hover {
@@ -316,7 +317,7 @@ header {
 .product-card img {
   width: 100%;
   height: 270px;
-  object-fit: cover;                /* imagem preenche sem distorcer */
+  object-fit: cover;         
   flex-shrink: 0;
   transition: transform 0.4s ease;
 }
@@ -356,8 +357,8 @@ header {
 
 /* Container geral do rodapé */
 .rodape {
-  background-color: black; /* cor de fundo escura */
-  color: #fff;            /* texto branco */
+  background-color: black;
+  color: #fff;         
   padding: 40px 20px;
   text-align: center;
   height: 30%;

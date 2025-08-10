@@ -1,0 +1,399 @@
+:root {
+  --primary: #004aad;           /* Azul escuro principal */
+  --accent: #ff6600;            /* Laranja para detalhes */
+  --light: #ffffff;             /* Branco */
+  --dark: #000000;              /* Preto */
+  --gray-light: #f5f5f5;        /* Cinza claro para fundos */
+  --gray-medium: #999999;       /* Cinza para textos secundários */
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);   /* Sombra leve */
+  --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra forte */
+  --border-radius: 10px;        /* Bordas arredondadas */
+  --transition-speed: 0.3s;     /* Velocidade padrão para transições */
+  --font-family-base: 'Poppins', sans-serif; /* Fonte principal */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔹 NAV com vídeo de fundo */
+.nav-container {
+  height: 75px; /* define a altura da barra de navegação */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black; /* vídeo está no fundo */
+  padding: 0 20px;
+  position:center;
+  z-index: 2;
+  font-size: 35px;
+}
+
+/* 🔹 Logo */
+.logo-container {
+  z-index: 2;
+}
+
+.logo {
+  height: 210px;
+  position: center;
+}
+
+/* Botão WhatsApp */
+#botao-wpp {
+  background-color: #e55a00;
+  color: white;
+  padding: 20px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+#botao-wpp:hover {
+  box-shadow:
+    0 0 10px #00d4ff,
+    0 0 20px #00d4ff,
+    0 0 30px #00d4ff,
+    0 0 50px #0099ff,
+    0 0 100px #0099ff;
+}
+
+/* Botão WhatsApp 2*/
+#botao-wpp-2 {
+  background-color: #003a90;
+  color: white;
+  padding: 20px 12px;
+  border-radius: 5px;
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+  font-weight: bold;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* alinha conteúdo interno horizontalmente */
+  align-items: center;     /* alinha conteúdo interno verticalmente */
+  overflow: visible; 
+  font-size: 30px;
+  margin-top: 2vh;
+}
+
+#botao-wpp-2:hover {
+  box-shadow:
+    0 0 10px #e9cdbe,
+    0 0 20px #ed9d6f,
+    0 0 30px #df7a28,
+    0 0 50px #ff7c11,
+    0 0 100px #ff6600;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #004aad;
+  background-image: url("../assets/banner\ capa\ iphone.png"); /* substitua pela imagem real */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9rem 1rem 5rem;
+  padding-top: 100px;
+
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-content h2#linha-um {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;  /* altura do sombreado, ajuste como preferir */
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  pointer-events: none; /* permite que cliques passem pelo sombreado */
+}
+
+/* 🔹 Links do menu */
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  z-index: 2;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ff6600;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--light);
+  font-size: 2.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* =================== Serviços =================== */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Feedbacks à esquerda */
+.feedback-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 45%
+}
+
+.feedback {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Vídeo à direita */
+.video-coluna {
+  width: 300px;
+  flex-shrink: 0;
+  width: 50%;
+  position: right;
+  
+}
+
+.video-coluna video {
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+/* Grid para os cards de serviços */
+.grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Grid com 3 colunas responsivas */
+.grid-3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Centraliza itens dentro do grid */
+.grid-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--light);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  text-align: center;
+  transition: transform var(--transition-speed) ease,var(--transition-speed) ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-strong);
+}
+
+.card .icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .depoimentos-container {
+    display: flex;
+    flex-direction: column;  /* empilha depoimentos e vídeo */
+    align-items: center;
+  }
+}
+
+/* =================== Produtos =================== */
+
+.products h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 3rem 0 2rem;
+  color: var(--dark);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* quantas colunas couberem */
+  gap: 2rem;                        /* espaçamento entre os cards */
+  padding: 0 20px;                  /* espaço nas laterais da tela */
+  justify-items: center;            /* centraliza os cards em cada coluna */
+}
+
+.product-card {
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 550px;                 /* limita largura máxima do card */
+  margin: 0 auto;                   /* centraliza o card */
+  height: auto;                     /* altura dinâmica conforme conteúdo */
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-strong);
+}
+
+.product-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;                /* imagem preenche sem distorcer */
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1rem;
+  color: var(--dark);
+  flex-grow: 1;
+}
+
+.product-card .info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.product-card .info p {
+  font-size: 1rem;
+  color: var(--gray-medium);
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.product-card .info span {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+
+/* Container geral do rodapé */
+.rodape {
+  background-color: black; /* cor de fundo escura */
+  color: #fff;            /* texto branco */
+  padding: 40px 20px;
+  text-align: center;
+  height: 30%;
+  background-image: url(../assets/degrade\ rodape.png);
+}
+
+/* Container interno do rodapé */
+.container-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo do rodapé */
+.logo-rodape {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Seção de contato */
+.contact {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+  color:white;
+  box-shadow: 0 4px 20px rgba(0.4, 0, 0, 0.4);
+  background-image: url(../assets/degrade\ rodape.png);
+}
+
+.contact h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

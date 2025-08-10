@@ -1,0 +1,56 @@
+/* =================== Responsividade para MOBILE =================== 
+PARA O VÍDEO*/
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;   /* Empilha os elementos em vez de lado a lado */
+    align-items: center;      /* Centraliza horizontalmente */
+  }
+
+  .feedback-coluna, .video-coluna {
+    width: 100%;              /* Faz ambas ocuparem toda a largura */
+  }
+
+  .video-coluna {
+    display: flex;            /* Permite centralizar o vídeo */
+    justify-content: center;
+    margin-top: 20px;         /* Espaço entre feedbacks e vídeo */
+  }
+
+  .video-coluna video,
+  .video-coluna img {
+    width: 45%;               /* Ocupa quase toda a tela, mas com margem */
+    max-width: 400px;         /* Limita tamanho em telas maiores */
+    height: auto;             /* Mantém proporção do vídeo/imagem */
+    border-radius: 15px;      /* Bordas arredondadas para consistência visual */
+  }
+}
+
+/*botão wpp para mobile*/
+
+@media (max-width: 768px) {
+  #botao-wpp,
+  #botao-wpp-2 {
+    padding: 14px 10px;     /* Reduz tamanho do botão */
+    font-size: 20px;        /* Fonte mais proporcional ao mobile */
+    width: 90%;             /* Botão ocupa quase toda a largura da tela */
+    max-width: 350px;       /* Limite em telas um pouco maiores */
+    margin: 10px auto;      /* Centraliza e dá espaçamento vertical */
+  }
+}
+
+/*botão de card*/
+
+@media (max-width: 768px) {
+  .btn-buy {
+    width: 100%;            /* Botão ocupa toda a largura do card */
+    font-size: 1rem;        /* Texto proporcional ao mobile */
+    padding: 0.8rem 0;      /* Reduz altura do botão */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;            /* Cards passam a ocupar toda a largura no mobile */
+    height: auto;           /* Permite altura dinâmica, adaptada ao conteúdo */
+  }
+}

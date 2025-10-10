@@ -18,6 +18,9 @@ Este é o site oficial da **CG CELL – Soluções em tecnologia**, uma empresa 
 Desenvolvido com foco em **design moderno**, **responsividade mobile** e **experiência do usuário**, este site foi criado com **HTML5**, **CSS3** e **JavaScript básico **.
 
 ---
+Da uma olhada!
+<img width="1917" height="853" alt="image" src="https://github.com/user-attachments/assets/cb80b1e2-2f5a-4c19-b04e-adcf4f4b9a3a" />
+
 
 ## 🧠 Funcionalidades
 

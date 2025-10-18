@@ -1,69 +1,73 @@
-# cgcell-web
-Site oficial da CG CELL – Tecnologia, desenvolvido em HTML, CSS e JS. Design moderno, responsivo e otimizado, com apresentação de serviços, portfólio e contato, focado na melhor experiência do usuário.
+# CG CELL – Tecnologia e Assistência Técnica 💻🔧
 
-# CG CELL – Tecnologia e assistência técnica
+![CG CELL](https://github.com/user-attachments/assets/cb80b1e2-2f5a-4c19-b04e-adcf4f4b9a3a)
 
-> Site institucional e de vitrine para assistência técnica e venda de acessórios da CG CELL.
-
-
-# Sobre o Projeto
-
-Este é o site oficial da **CG CELL – Soluções em tecnologia**, uma empresa especializada em:
-
-- Manutenção de celulares (iPhone, Samsung, Xiaomi, Motorola, entre outras marcas)
-- Troca de tela, bateria, conector de carga e reparos em placa
-- Desoxidação de aparelhos molhados
-- Suporte técnico e atendimento via WhatsApp
-
-Desenvolvido com foco em **design moderno**, **responsividade mobile** e **experiência do usuário**, este site foi criado com **HTML5**, **CSS3** e **JavaScript básico **.
-
----
-Da uma olhada!
-<img width="1917" height="853" alt="image" src="https://github.com/user-attachments/assets/cb80b1e2-2f5a-4c19-b04e-adcf4f4b9a3a" />
-
-
-## 🧠 Funcionalidades
-
-✅ Página inicial com destaque da marca e serviços  
-✅ Seção de depoimentos reais e vídeo institucional  
-✅ Grid de produtos com imagens e descrições  
-✅ Botões de orçamento via WhatsApp  
-✅ Animações com AOS (Animate on Scroll)  
-✅ Design responsivo para dispositivos móveis  
-✅ Rodapé personalizado com logo e contatos
+> Site institucional e vitrine da **CG CELL**, focado em serviços de manutenção de celulares e venda de acessórios, com design moderno e experiência otimizada para o usuário.
 
 ---
 
-# Tecnologias Utilizadas
+## 🌟 Sobre o Projeto
 
-- **HTML5** – estrutura semântica
-- **CSS3** – estilos, responsividade e animações
-- **JavaScript** – scripts leves e interação com a página
-- **Google Fonts** – tipografia moderna (Poppins)
-- **Font Awesome** – ícones
-- **AOS.js** – animações ao rolar
+O site oficial da **CG CELL – Soluções em Tecnologia** apresenta:
 
----
+- **Manutenção de celulares**: iPhone, Samsung, Xiaomi, Motorola, entre outras marcas  
+- **Reparos especializados**: troca de tela, bateria, conector de carga, consertos de placa  
+- **Desoxidação de aparelhos molhados**  
+- **Suporte técnico via WhatsApp**  
+- **Venda de acessórios e produtos tecnológicos**
 
-# Responsividade
-
-Totalmente adaptado para dispositivos móveis (smartphones e tablets), com atenção especial à legibilidade, botões clicáveis e boa usabilidade em telas pequenas.
+O desenvolvimento priorizou **responsividade**, **design moderno** e **experiência do usuário**, utilizando **HTML5**, **CSS3** e **JavaScript**.
 
 ---
 
-# Acesse
+## 🛠 Funcionalidades
 
-Em breve publicado em:  
-[https://www.cgcell.com.br](https://www.cgcell.com.br)
+- ✅ Página inicial com destaque para a marca e serviços  
+- ✅ Seção de depoimentos reais e vídeo institucional  
+- ✅ Grid de produtos com imagens e descrições detalhadas  
+- ✅ Botões de orçamento e contato via WhatsApp  
+- ✅ Animações suaves com AOS.js (Animate on Scroll)  
+- ✅ Design responsivo para todos os dispositivos (desktop, tablet e mobile)  
+- ✅ Rodapé completo com logo, contatos e redes sociais  
 
 ---
 
-##  Estrutura de Pastas
+## ⚡ Tecnologias Utilizadas
+
+[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  
+[![CSS3](https://img.shields.io/badge/CSS3-%231572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
+
+- **Google Fonts** – tipografia moderna (Poppins)  
+- **Font Awesome** – ícones  
+- **AOS.js** – animações ao rolar a página  
+
+---
+
+## 📱 Responsividade
+
+O site é totalmente adaptado para:
+
+- Desktops e notebooks  
+- Tablets  
+- Smartphones  
+
+Com atenção especial à legibilidade, tamanho de botões clicáveis e boa usabilidade em telas pequenas.
+
+---
+
+## 🌐 Demonstração
+
+Em breve publicado em: [https://www.cgcell.com.br](https://www.cgcell.com.br)
+
+---
+
+## 🗂 Estrutura de Pastas
 
 ```bash
 /
 ├── assets/               # Imagens, ícones e vídeos
-├── scripts/              # Arquivos JS
+├── scripts/              # Arquivos JavaScript
 ├── style/
 │   ├── style.css         # Estilos principais (desktop)
 │   └── mobile.css        # Estilos para dispositivos móveis

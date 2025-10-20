@@ -109,7 +109,7 @@ header {
   justify-content: center;
   color: white;
   background-color: #004aad;
-  background-image: url("../assets/banner\ capa\ iphone.png"); 
+  background-image: url("/banner\ capa\ iphone.png"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

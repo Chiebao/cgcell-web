@@ -5,7 +5,7 @@ Projeto real, em produção, desenvolvido para captar orçamentos pelo WhatsApp 
 a presença da loja na busca local do Google.
 
 🔗 **Site no ar:** [chiebao.github.io/cgcell-web](https://chiebao.github.io/cgcell-web/)
-📍 **Cliente:** CG Cell Repair — R. Isabel Machado Sizisnando, 11 — Jardim Josane, Sorocaba/SP
+📍 **Empresa:** CG Cell Repair — R. Isabel Machado Sizisnando, 11 — Jardim Josane, Sorocaba/SP
 
 ---
 
@@ -16,7 +16,7 @@ transformar visitante em orçamento sem depender de ligação, e aparecer na bus
 procura conserto de celular na região.
 
 O site é uma página única, estática, sem framework e sem backend — escolha proposital, porque
-o cliente não tem equipe de TI e precisa hospedar de graça, sem manutenção de servidor.
+a loja não tem equipe de TI e precisa hospedar de graça, sem manutenção de servidor.
 
 ---
 
@@ -50,18 +50,19 @@ dinamicamente pela **Google Places API**, em vez de mantê-las no HTML.
 
 ### Otimização de imagens: 95% mais leve
 
-As imagens originais eram PNGs de aproximadamente 2 MB cada, somando **14,4 MB** só de mídia.
+As fotos dos serviços eram PNGs de aproximadamente 2 MB cada, e o logo tinha 1080×1080 px.
 Numa assistência técnica, o cliente acessa pelo celular, muitas vezes com dados móveis —
-isso significava dezenas de segundos de tela em branco.
+isso significava vários segundos de tela em branco.
 
-Convertendo para JPEG progressivo com qualidade 82 e redimensionando para 1200px de largura:
+Convertendo as fotos para JPEG progressivo (qualidade 82, 1200 px de largura) e reduzindo
+o logo para 256 px:
 
 | | Antes | Depois |
 |---|---:|---:|
-| Imagens | 14,4 MB | **0,7 MB** |
-| Página completa | ~14,5 MB | **~0,75 MB** |
+| Imagens usadas pela página | 12,8 MB | **0,39 MB** |
+| Página completa (HTML + imagens) | 12,8 MB | **0,44 MB** |
 
-Redução de **95%**, sem perda visível. Todas as imagens abaixo da dobra usam `loading="lazy"`.
+Redução de **96%**, sem perda visível. As fotos dos serviços usam `loading="lazy"`.
 
 ### Animação que não quebra a página
 
@@ -107,14 +108,17 @@ Recursos usados: CSS Grid, Flexbox, custom properties, `clamp()` para tipografia
 
 ```
 /
-├── index.html      # Página completa (HTML, CSS e JS em arquivo único)
-├── logo.png        # Logo da loja (também usado como favicon)
-├── servico-*.jpg   # Fotos dos serviços (tela, bateria, conector, água, placa, software)
+├── index.html          # Página completa (HTML, CSS e JS em arquivo único)
+├── logo.png            # Logo da loja (também usado como favicon)
+├── servico-*.jpg       # Fotos otimizadas dos serviços (tela, bateria, conector, água, placa, software)
 └── README.md
 ```
 
 CSS e JavaScript ficam no próprio `index.html`. Para uma página única de menos de 50 KB,
 isso elimina duas requisições de rede e o site carrega em uma só ida ao servidor.
+
+> Os arquivos `style.css`, `mobile.css`, `scripts.js`, o vídeo e os PNGs com nomes descritivos
+> são de uma versão anterior e não são carregados pela página atual.
 
 ---
 
@@ -138,6 +142,8 @@ Hospedagem em **GitHub Pages**, publicado a partir da branch `main`.
 - [ ] Integrar a **Google Places API** para carregar as avaliações dinamicamente
 - [ ] Servir as imagens em **WebP** com `<picture>` e fallback em JPEG
 - [ ] Menu de navegação para telas pequenas (hoje os links ficam ocultos no mobile)
+- [ ] Ajustar o menu entre 900 e 1100 px de largura, onde os itens ficam apertados
+- [ ] Remover do repositório os arquivos da versão anterior
 - [ ] Unificar o perfil duplicado da loja no Google Meu Negócio
 
 ---
